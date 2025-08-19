@@ -1,6 +1,6 @@
 # Shell Scripting
 
-## BackupManager
+## script1.sh : BackupManager
 
 A simple shell script to create a backup of files and folders, compress them, and store them into a tar archive.
 
@@ -47,7 +47,7 @@ tar: Removing leading `/' from member names
 ```
 
 
-## PasswordGenerator
+## script2.sh : PasswordGenerator
 
 A shell script to generate **random secure passwords**. The user can either:
 
@@ -99,7 +99,7 @@ CSkwn60#%@)##&
 
 ---
 
-##  ResourceMonitor
+## script3.sh : ResourceMonitor
 
 A shell script to monitor **system processes** and display the **top 5 CPU and memory consuming processes** every 5 seconds.
 
@@ -155,7 +155,7 @@ ________________________________________________________________________________
 
 ---
 
-## BasicCalculator
+## script4.sh : BasicCalculator
 
 A shell script that acts as a **simple calculator** using shell arithmetic.
 
