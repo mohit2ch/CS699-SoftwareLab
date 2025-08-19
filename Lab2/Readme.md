@@ -18,23 +18,17 @@ It runs the built command and generates a .tar file containing the selected file
 
 ### 🔹 Commands Used
 
-tar -c
+* **`tar -c`**
 Creates a new tar archive.
 
-tar -f <filename>
+* **`tar -f <filename>`**
 Specifies the name of the archive file to create.
 
-read
+* **`read`**
 Reads user input from the terminal.
 
-while [ "$option" != "n" ]
+* **`while [ "$option" != "n" ]`**
 Loops until the user enters n to stop adding more files.
-
-Command building (command="$command $FileName")
-Dynamically builds the tar command with all the selected files and folders.
-
-Command substitution ($($command))
-Executes the final built tar command.
 
 ### 🔹 Example Run
 
