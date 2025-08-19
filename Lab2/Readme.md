@@ -39,22 +39,19 @@ Executes the final built tar command.
 ### 🔹 Example Run
 
 
-$ ./BackupManager.sh
+```bash
+[mohitch@cachyos-x8664 Lab2]$ bash BackupManager.sh 
 This is a tool to create a backup of files/folders and compress them
 Enter the absolute path of the file/folder
-/home/user/Documents/report.docx
-Any more files to backup?(Y/n)
-Y
-Enter the absolute path of the file/folder
-/home/user/Pictures
+/home/mohitch/Documents/SoftwareLab/Lab2/output.txt
 Any more files to backup?(Y/n)
 n
 What would you like to name the backup file
-mybackup.tar
+Output
+tar: Removing leading `/' from member names
 
-Perfect 👍 I’ve gone through the three scripts. Below are **README.md style explanations** for each, similar to the one we wrote for `BackupManager`.
+```
 
----
 
 ## PasswordGenerator
 
@@ -89,14 +86,21 @@ A shell script to generate **random secure passwords**. The user can either:
 ### 🔹 Example Run
 
 ```bash
-$ ./PasswordGenerator.sh
-Do you want an OpenSSL password or custom one? (openssl/custom)
-custom
-Enter number of uppercase letters: 3
-Enter number of lowercase letters: 4
-Enter number of digits: 2
-Enter number of special characters: 1
-Generated password: AbXhjs92@
+[mohitch@cachyos-x8664 Lab2]$ bash PasswordGenerator.sh 
+Enter the size of password to generate
+(Generally Minimum 8, Recommended 16, Maximum 64)
+14
+Would you like to generate a 1.default openssl password or 2.customize this process?(1/2)
+2
+How many uppercase letters will there be?(1 - 14)
+2
+How many lowercase letters will there be?(1 - 12)
+3
+How many numbers will there be?(1 - 9)
+2
+Remaining 7 characters will be special characters
+CSkwn60#%@)##&
+
 ```
 
 ---
@@ -131,21 +135,28 @@ A shell script to monitor **system processes** and display the **top 5 CPU and m
 ### 🔹 Example Run
 
 ```bash
-$ ./ResourceMonitor.sh
-This is Resource Monitor that shows the top 5 processes that use most cpu and memory.
-Press Ctrl+C to exit
+__________________________________________________________________________________
 
-Top 5 by Memory consumption
-  PID  PPID COMMAND %MEM
-  123     1 firefox 15.0
-  456     1 chrome  12.5
-  ...
+Top 5 by Memory consumption\n
+    PID    PPID COMMAND         %MEM
+   1570     915 firefox          3.3
+   4751     915 brave            3.2
+   1156     915 plasmashell      2.6
+   4461    1650 Isolated Web Co  2.4
+   1723    1650 Isolated Web Co  2.2
 
-Top 5 by CPU consumption
-  PID  PPID COMMAND %CPU
-  789     1 gcc     99.0
-  555     1 java    55.5
-  ...
+__________________________________________________________________________________
+
+Top 5 by CPU consumption\n
+    PID    PPID COMMAND         %CPU
+   2519    2518 xournalpp       15.5
+    980     976 kwin_wayland    10.6
+   4834    4764 brave            6.4
+   4798    4761 brave            4.6
+   1570     915 firefox          4.5
+
+__________________________________________________________________________________
+
 ```
 
 ---
@@ -177,15 +188,21 @@ A shell script that acts as a **simple calculator** using shell arithmetic.
 ### 🔹 Example Run
 
 ```bash
-$ ./BasicCalculator.sh
+[mohitch@cachyos-x8664 Lab2]$ bash BasicCalculator.sh 
 This is a basic calculator that can compute basic mathematical expressions including additions and multiplications
 
 Enter the expression to execute
-5+3*2
+5/7*9
+Output : 0
+
+Would you like to continue?(Y/n)
+Y
+Enter the expression to execute
+5*9/4
 Output : 11
 
 Would you like to continue?(Y/n)
-n
+
 ```
 
 ---
