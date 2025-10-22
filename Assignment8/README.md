@@ -5,10 +5,15 @@ Used Flask framework to deploy a website and provide backend APIs. Used jinja fo
 ### About the Website
 The website is a simple Todo List. The functionalities provided are mentioned below.
 1. You may add todos and they will be ordered by the time they were last updated
+  ![ADDTODO](images/AddTodo.png)
 2. Each todo has the following information on display : Date created/repeated and content
+  ![TODOCONTENT](images/TodoContent.png)
 3. You may mark the todo as done once the task at hand is complete. The task will now be shown under Done section
+   
+    ![MARKASDONE](images/MarkAsDone.png)
+  
 4. Done keeps a history of your tasks. You may choose to repeat any of the tasks by clicking repeat. 
-
+  ![DONETASKS](images/DoneTasks.png)
 ### How to setup this project
 
 **Create and activate a virtual environment**
